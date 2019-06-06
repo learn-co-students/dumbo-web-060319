@@ -1,0 +1,1 @@
+puts "HELLO FROM user.rb"
