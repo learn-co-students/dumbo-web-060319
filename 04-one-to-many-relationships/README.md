@@ -6,46 +6,22 @@
 * Model
 * Domain
 
-* Twitter
+* Example - Twitter
+ * Users: Stores data about our users.
+ * Tweets: Stores data about our tweets.
 
-* Users
-* Tweets
-
-Relationships
-one to many
-many to many
+* Relationships
+ * one to many - in our example, a User `*has_many*` tweets and a Tweet `*belongs_to*` a user.
+ * many to many - more on this tomorrow
 
 * Implement one object to many objects relationship
   * One object has many objects
   * One object belongs to another object
 * Practice passing custom objects as arguments to methods
 * Review `self`
+
 * Demonstrate single source of truth
 * Infer type of method (class or instance) through naming conventions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
