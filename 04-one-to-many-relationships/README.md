@@ -3,16 +3,16 @@
 ## Objectives
 
 * Explain domain modeling
-* Model
-* Domain
+   * `Model`
+   * `Domain`
 
 * Example - Twitter
- * Users: Stores data about our users.
- * Tweets: Stores data about our tweets.
+   * `User`: Stores data about our users.
+   * `Tweet`: Stores data about our tweets.
 
 * Relationships
- * one to many - in our example, a User `*has_many*` tweets and a Tweet `*belongs_to*` a user.
- * many to many - more on this tomorrow
+   * **one-to-many** - in our example, a `User` `has_many` tweets and a `Tweet` `belongs_to` a user.
+   * **many-to-many** - more on this tomorrow
 
 * Implement one object to many objects relationship
   * One object has many objects
