@@ -3,6 +3,17 @@
 ## Objectives
 
 * Explain domain modeling
+* Model
+* Domain
+
+* Twitter
+
+* Users
+* Tweets
+
+Relationships
+one to many
+many to many
 
 * Implement one object to many objects relationship
   * One object has many objects
