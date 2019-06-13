@@ -13,11 +13,12 @@
 
 ```
 books
-id   | title                               | author_id
---------------------------------------------------------
-1      "POODR"                        
-2      "Surviving Peanuts"                      
-3      "99 Bottles of OOP"                       
+id   | title                             
+-----------------------------------------
+1      "POODR"                                    
+2      "Surviving Peanuts"                         
+3      "99 Bottles of OOP"                              
+4      "Sandi teaches Kevin to code"              
 
 
 authors
@@ -27,34 +28,13 @@ id    |    name
 2         "Kevin McAlear"
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 books_authors
 id |  author_id | book_id
 --------------------------
+1       1             1
+2       2             2
+3       1             3
+4       1             4
 
 
 ```
