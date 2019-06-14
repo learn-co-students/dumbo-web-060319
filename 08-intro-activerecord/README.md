@@ -1,11 +1,11 @@
 ## Sample Student Facing README:
 
 ### Inheritance
-Allows a class to "inherit" from another class.
-Sharing methods with another class.
+* Allows a class to "inherit" from another class.
+* Sharing methods with another class.
 
 ### Mass Assignment
-Utilizing self.send to instantiate instances with hashes
+* Utilizing self.send to instantiate instances with hashes
 
 ### Rake and File Structure
 
