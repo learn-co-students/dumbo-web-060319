@@ -5,7 +5,7 @@
 * Sharing methods with another class.
 
 ### Mass Assignment
-* Utilizing self.send to instantiate instances with hashes
+* Utilizing `self.send` to instantiate instances with hashes
 
 ### Rake and File Structure
 
