@@ -1,5 +1,9 @@
 ## Sample Student Facing README:
 
+### Inheritance
+Allows a class to "inherit" from another class.
+Sharing methods with another class.
+
 ### Rake and File Structure
 
 - Rake
