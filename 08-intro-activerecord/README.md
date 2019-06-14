@@ -4,6 +4,9 @@
 Allows a class to "inherit" from another class.
 Sharing methods with another class.
 
+### Mass Assignment
+Utilizing self.send to instantiate instances with hashes
+
 ### Rake and File Structure
 
 - Rake
