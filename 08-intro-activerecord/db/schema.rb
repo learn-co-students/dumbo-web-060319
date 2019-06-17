@@ -10,7 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_14_150001) do
+ActiveRecord::Schema.define(version: 2019_06_17_140817) do
+
+  create_table "pokeballs", force: :cascade do |t|
+    t.integer "trainer_id"
+    t.integer "pokemon_id"
+    t.string "nickname"
+  end
 
   create_table "pokemons", force: :cascade do |t|
     t.string "name"
@@ -19,7 +25,6 @@ ActiveRecord::Schema.define(version: 2019_06_14_150001) do
     t.string "next_evolution_form"
     t.integer "weight"
     t.integer "level"
-    t.integer "trainer_id"
   end
 
   create_table "trainers", force: :cascade do |t|
