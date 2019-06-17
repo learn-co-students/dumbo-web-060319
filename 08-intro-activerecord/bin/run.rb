@@ -12,3 +12,4 @@ confirm_input = gets.chomp
 if confirm_input == "yes"
   current_trainer = Trainer.create(name: trainer_name_input, badge_count: 0)
 end
+
