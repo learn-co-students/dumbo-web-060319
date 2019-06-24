@@ -4,7 +4,10 @@
 
 ## Introduction to the internet
 
-* What is the difference between the Internet and the Web?
+* What is the difference between the Internet, the Web and a browser?
+Internet - Server to server communication
+Web - Web sites (following a specific set of rules)
+Browser - Portal to use the Internet
   * https://en.wikipedia.org/wiki/ARPANET
   * https://en.wikipedia.org/wiki/Tim_Berners-Lee
   * http://info.cern.ch/hypertext/WWW/TheProject.html
