@@ -1,5 +1,10 @@
 # SWBATs
 * Explain the Model View Controller (MVC) pattern and give an example
+
+Models - Logic/Class Models
+Views - HTML/ CSS
+Controllers - Middle person between views and models
+
   * https://docs.google.com/presentation/d/1no3yw_Vw4hBzGDlsEDcubvFnowi-Exjg9FW_VJid_U0/edit#slide=id.g378a2b8862_0_22
 * Explain how web frameworks (like Sinatra) use the MVC pattern and why
 * Define 'convention over configuration'
@@ -21,4 +26,4 @@
     * params
     * filtering
     * forms
-  * MVC refactor 
+  * MVC refactor

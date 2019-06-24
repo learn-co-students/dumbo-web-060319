@@ -1,0 +1,13 @@
+<h1>Hello! Here are all of our students!</h1>
+
+<p>
+  This is our class motto: <%= @tagline %>
+</p>
+
+<ul>
+  <% @studs.each do |student| %>
+    <li>
+      <%= student.name %> - <%= student.age %>
+    </li>
+  <% end %>
+</ul>

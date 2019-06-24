@@ -23,3 +23,24 @@ students = ["Abdul Sayed",
 "Left Eye",
 "T-Boz",
 "Chilli"]
+
+students.each do |student_name|
+  Student.create(
+    name: student_name,
+    age: rand(18),
+    anxiety: student_name.split(" ")[0]
+  )
+
+
+
+
+
+
+
+
+
+
+end
+
+
+puts "It has been seeded!"

@@ -8,7 +8,15 @@ class ApplicationController < Sinatra::Base
   end
 
   get "/" do
-    "¡¡¡Turn up!!! Don't go json waterfalls. 💦" * 10
+    # "<h1>¡¡¡Turn up!!! Don't go json waterfalls. 💦</h1> <p> Welcome to DGJSONW's homepage!</p>"
+    erb :welcome
+  end
+
+  get '/students' do
+    @studs = Student.all
+    @tagline = "Don't Go JSON Waterfalls. 💦"
+    # binding.pry
+    erb :students
   end
 
 end
