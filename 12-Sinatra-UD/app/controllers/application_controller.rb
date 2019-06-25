@@ -5,6 +5,7 @@ class ApplicationController < Sinatra::Base
   configure do
     set :public_folder, 'public'
     set :views, 'app/views'
+    set :method_override, true
   end
 
   get "/" do
@@ -20,10 +21,12 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 
+  #New Action
   get '/students/new' do
     erb :new
   end
 
+  #Create Action
   post '/students' do
     # binding.pry
     @student = Student.create(params)
@@ -31,15 +34,51 @@ class ApplicationController < Sinatra::Base
     redirect to "/students/#{@student.id}"
   end
 
+  #Show Action
   get "/students/:id" do
     # binding.pry
     @student = Student.find(params[:id])
     erb :show
   end
 
+  #Edit Action
+  get "/students/:id/edit" do
+    @student = Student.find(params[:id])
+    erb :edit
+  end
+
+ # OLD PARAMS
+ #  {"_method"=>"PUT",
+ # "name"=>"Kevin \"No\" Lai",
+ # "age"=>"10",
+ # "anxiety"=>"Coding Challenge",
+ # "id"=>"14"}
+
+ # NEW PARAMS
+ #  {"_method"=>"PUT",
+ #    student => {
+ #    "name"=>"Kevin \"No\" Lai",
+ #    "age"=>"10",
+ #    "anxiety"=>"Coding Challenge"
+ #    },
+ #    "id"=>"14"
+ #  }
 
 
+  #Update Action
+  put "/students/:id" do
+    @student = Student.find(params[:id])
+    @student.update(params[:student])
+    redirect to "/students/#{@student.id}"
+    # binding.pry
+  end
 
+  # Delete Action
+  delete "/students/:id" do
+    @student = Student.find(params[:id])
+    @student.destroy
+    redirect to "/students"
+  end
 
 
 

@@ -25,11 +25,11 @@
   * MVC refactor
 
 # RESTful CRUD
-* Reading
-* New
-* Creating
-  * Form
-  * Mass assignment
+* Reading ✅
+* New ✅
+* Creating ✅
+  * Form ✅
+  * Mass assignment ✅
 * Edit form
   * Nested params
 * Updating
