@@ -1,7 +1,13 @@
 # SWBAT
-* Explain RESTful
+* Explain RESTful (Representational State Transfer)
+  - Fully CRUDable
 
 * Demonstrate how REST is used with CRUD
+  - Create  
+  - Read
+  - Update
+  - Delete
+
 * Build out CRUD using Sinatra
 
 # Features
