@@ -1,0 +1,21 @@
+<h1>Hello! Here are all of our students!</h1>
+
+<p>
+  This is our class motto: <%= @tagline %>
+</p>
+
+<a href="/students/new">
+  Make a New Student
+</a>
+
+<hr>
+
+<ul>
+  <% @studs.each do |student| %>
+    <li>
+      <a href='<%= "/students/#{student.id}" %>' >
+        <%= student.name %> - <%= student.age %>
+      </a>
+    </li>
+  <% end %>
+</ul>
