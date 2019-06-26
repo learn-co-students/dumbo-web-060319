@@ -43,6 +43,12 @@ whales = Dream.create(name: "Swimming with Whales", intensity: 100)
 communication = Dream.create(name: "Seamless communication between everyone", intensity: 95)
 psy = Dream.create(name: "Psychic Apocalypse", intensity: 99)
 
+StudentDream.create(student: alex, dream: mantis)
+StudentDream.create(student: alex, dream: communication)
+StudentDream.create(student: muhammad, dream: wakanda)
+StudentDream.create(student: muhammad, dream: communication)
+StudentDream.create(student: muhammad, dream: whales)
+StudentDream.create(student: abril, dream: whales)
 
 
 

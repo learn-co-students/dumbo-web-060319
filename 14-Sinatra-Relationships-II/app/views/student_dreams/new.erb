@@ -1,0 +1,32 @@
+<h1>Log a Dream</h1>
+<form action="/student_dreams" method="POST">
+
+  <label for="student">Student: </label>
+  <!-- params[:student_dream][:student_id] -->
+  <select id="student" name="student_dream[student_id]">
+    <% @students.each do |student| %>
+      <option value="<%= student.id%>">
+        <%= student.name %>
+      </option>
+    <% end %>
+  </select>
+
+  <label for="dream">Dream: </label>
+  <!-- params[:student_dream][:dream_id] -->
+  <select id="dream" name="student_dream[dream_id]">
+    <% @dreams.each do |dream| %>
+      <option value="<%= dream.id%>">
+        <%= dream.name %>
+      </option>
+    <% end %>
+  </select>
+
+
+  <input type="submit" value="Log a Dream">
+
+
+
+
+
+
+</form>

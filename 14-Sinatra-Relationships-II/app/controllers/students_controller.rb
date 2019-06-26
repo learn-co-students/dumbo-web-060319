@@ -24,13 +24,14 @@ class StudentsController < ApplicationController
   #Show Action
   get "/students/:id" do
     # binding.pry
-    @student = Student.find(params[:id])
+    @dreams = Dream.all
+    find_student
     erb :"students/show"
   end
 
   #Edit Action
   get "/students/:id/edit" do
-    @student = Student.find(params[:id])
+    find_student
     erb :"students/edit"
   end
 
@@ -54,7 +55,7 @@ class StudentsController < ApplicationController
 
   #Update Action
   put "/students/:id" do
-    @student = Student.find(params[:id])
+    find_student
     @student.update(params[:student])
     redirect to "/students/#{@student.id}"
     # binding.pry
@@ -62,9 +63,13 @@ class StudentsController < ApplicationController
 
   # Delete Action
   delete "/students/:id" do
-    @student = Student.find(params[:id])
+    find_student
     @student.destroy
     redirect to "/students"
+  end
+
+  def find_student
+    @student = Student.find(params[:id])
   end
 
 end

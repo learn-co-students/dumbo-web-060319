@@ -1,4 +1,4 @@
-<h1>Form for my grammy</h1>
+<h1>Make a Dream</h1>
 
 <form method="POST" action="/dreams">
 
@@ -6,15 +6,6 @@
   <input type="text" name="dream[name]" id="dream_name">
   <label for="dream_intensity">Intensity: </label>
   <input type="number" name="dream[intensity]" id="dream_intensity">
-  <label for="dream_student">Student: </label>
-  <!-- <input type="number" id="dream_student" name="dream[student_id]"> -->
-  <select id="dream_student" name="dream[student_id]">
-    <% @students.each do |student| %>
-      <option value="<%= student.id%>">
-        <%= student.name %>
-      </option>
-    <% end %>
-  </select>
 
   <input type="submit" name="submit" value="Make a Dream!">
 </form>

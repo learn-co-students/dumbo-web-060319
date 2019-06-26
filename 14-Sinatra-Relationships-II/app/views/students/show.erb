@@ -20,7 +20,18 @@
   <% end %>
 
 
-
+<h3>LOG A NEW DREAM</h3>
+<form action="<%= "/students/#{@student.id}/dreams" %>" method="POST">
+  <label for="dream">Dream:</label>
+  <select name="dream_id" id="dream">
+    <% @dreams.each do |dream| %>
+      <option value="<%= dream.id %>">
+        <%= dream.name %>
+      </option>
+    <% end %>
+  </select>
+  <input type="submit" value="Make it happen">
+</form>
 
 
 

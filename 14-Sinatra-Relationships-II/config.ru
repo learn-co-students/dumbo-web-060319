@@ -6,4 +6,5 @@ end
 
 use StudentsController
 use DreamsController
+use StudentDreamsController
 run ApplicationController
