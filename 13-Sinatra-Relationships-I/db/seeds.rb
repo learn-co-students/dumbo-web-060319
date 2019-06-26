@@ -37,12 +37,11 @@ muhammad = Student.find_by(name: "Muhammad Musah")
 abril = Student.find_by(name: "Abril Anchondo Reynaga")
 francis = Student.find_by(name: "Francis Mendez")
 
-d1 = Dream.create(name: "Praying Mantis and Bunk Beds oh my", intensity: 100, student_id: alex.id)
-
-Dream.create(name: "Build Real-World Wakanda", intensity: 100, student: muhammad)
-abril.dreams.create(name: "Swimming with Whales", intensity: 100)
-alex.dreams.create(name: "Seamless communication between everyone", intensity: 101)
-francis.dreams << Dream.create(name: "Psychic Apocalypse", intensity: 99)
+mantis = Dream.create(name: "Praying Mantis and Bunk Beds oh my", intensity: 100)
+wakanda = Dream.create(name: "Build Real-World Wakanda", intensity: 100)
+whales = Dream.create(name: "Swimming with Whales", intensity: 100)
+communication = Dream.create(name: "Seamless communication between everyone", intensity: 95)
+psy = Dream.create(name: "Psychic Apocalypse", intensity: 99)
 
 
 

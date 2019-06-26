@@ -1,0 +1,35 @@
+<h1>Hello, this is the Show Page.</h1>
+
+<h2>Name: <%= @student.name %> </h2>
+<p>Age: <%= @student.age %> </p>
+<p>Anxiety: <%= @student.anxiety %> </p>
+
+<form method="POST" action="/students/<%= @student.id %>">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="OBLITERATE STUDENT">
+</form>
+
+
+<h3>Dreams: <%= @student.dream_count %></h3>
+<ul>
+
+  <% @student.dreams.each do |dream| %>
+    <li>
+      <%= dream.name %>
+    </li>
+  <% end %>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ul>
