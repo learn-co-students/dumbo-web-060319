@@ -1,0 +1,10 @@
+<h1>This is our bread box.</h1>
+
+
+<ul>
+  <% @breads.each do |breadObject| %>
+    <li>
+      <%= link_to breadObject.name, breadObject %>
+    </li>
+  <% end %>
+</ul>
