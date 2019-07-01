@@ -22,10 +22,14 @@ class BreadsController < ApplicationController
   def create
     # byebug
     @bread = Bread.create(bread_params)
-
+    if @bread.valid?
+      redirect_to bread_path(@bread)
+    else
+      flash[:errors] = @bread.errors.full_messages
+      redirect_to new_bread_path
+    end
     ## Pick your poison
     # redirect_to @bread
-    redirect_to bread_path(@bread)
     # redirect_to "/breads/#{@bread.id}"
   end
 
@@ -33,8 +37,12 @@ class BreadsController < ApplicationController
   end
 
   def update
-    @bread.update(bread_params)
-    redirect_to bread_path(@bread)
+    if @bread.update(bread_params)
+      redirect_to bread_path(@bread)
+    else
+      flash[:errors] = @bread.errors.full_messages
+      redirect_to edit_bread_path(@bread)
+    end
   end
 
   def destroy

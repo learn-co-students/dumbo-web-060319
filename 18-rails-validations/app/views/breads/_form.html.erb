@@ -1,0 +1,19 @@
+<% if flash[:errors] %>
+  <ul>
+    <% flash[:errors].each do |error_message| %>
+      <li>
+        <%= error_message %>
+      </li>
+    <% end %>
+  </ul>
+<% end %>
+
+<%= form_for @bread do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :flavor %>
+  <%= f.text_field :flavor %>
+  <%= f.label :price %>
+  <%= f.number_field :price %>
+  <%= f.submit %>
+<% end %>
