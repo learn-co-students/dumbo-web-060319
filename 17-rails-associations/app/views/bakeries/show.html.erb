@@ -1,0 +1,6 @@
+<h1>Show Page for <%= @bakery.name %></h1>
+
+<p>Located at: <%= @bakery.address %></p>
+
+<%= link_to "Edit this bakery", edit_bakery_path(@bakery) %>
+<%= button_to "Destroy this bakery", bakery_path(@bakery), method: :delete %>

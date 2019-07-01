@@ -1,0 +1,11 @@
+<h1>Bakeries you won't believe exist!</h1>
+
+<%= link_to "Build a new Bakery", new_bakery_path %>
+
+<ul>
+  <% @bakeries.each do |bakery| %>
+    <li>
+      <%= link_to bakery.name, bakery_path(bakery) %>
+    </li>
+  <% end %>
+</ul>

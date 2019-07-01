@@ -5,6 +5,6 @@
   * In what situation might I want to do this?
 
 # Stretch
-* How do I avoid a SQL disaster when referencing an association in a loop?
+* How can I use helper methods to make my code less repetitive?
 * Does my form to create a model have to be on the new page for that model?
 * What are nested routes? Are they ever necessary? Can they make my life easier?

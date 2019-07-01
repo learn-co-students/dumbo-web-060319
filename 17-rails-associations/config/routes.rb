@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
+  resources :bakeries
   resources :breads
-
-
   # get "/breads/new", to: "breads#new", as: "new_bread"
   # post "/breads", to: "breads#create"
 

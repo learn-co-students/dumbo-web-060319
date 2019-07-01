@@ -51,14 +51,4 @@ class BreadsController < ApplicationController
     return params.require(:bread).permit(:name, :flavor, :price)
   end
 
-
-
-
-
-
-
-
-
-
-
 end
