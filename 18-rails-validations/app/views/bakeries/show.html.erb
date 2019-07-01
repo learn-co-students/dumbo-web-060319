@@ -1,0 +1,19 @@
+<h1>Show Page for <%= @bakery.name %></h1>
+
+<p>Located at: <%= @bakery.address %></p>
+
+<%= link_to "Edit this bakery", edit_bakery_path(@bakery) %>
+<%= button_to "Destroy this bakery", bakery_path(@bakery), method: :delete %>
+
+<h3>Here are all the Reviews:</h3>
+
+<ul>
+  <% @bakery.reviews.each do |review| %>
+    <li>
+      <%= review.content %> - <%= link_to review.bread.name, review.bread %>
+      <br>
+      <%= link_to "Edit Review", edit_review_path(review) %>
+      <%= button_to "Delete this review", review_path(review), method: :delete %>
+    </li>
+  <% end %>
+</ul>

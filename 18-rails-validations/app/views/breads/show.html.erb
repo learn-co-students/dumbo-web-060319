@@ -1,0 +1,20 @@
+<h1>Let's get this bread.</h1>
+
+<p>Name: <%= @bread.name %> </p>
+<p>Flavor: <%= @bread.flavor %> </p>
+<p>Price: $<%= @bread.price %> </p>
+
+<%= link_to "Take Me to the Bread Box", breads_path %>
+<%= link_to "Edit this bread", edit_bread_path(@bread) %>
+
+<%= button_to "Burn this bread to the ground", bread_path(@bread), method: :delete %>
+
+<h3>Here are all the Reviews</h3>
+
+<ul>
+  <% @bread.reviews.each do |review| %>
+    <li>
+      <%= review.content %> - <%= link_to review.bakery_name, review.bakery %>
+    </li>
+  <% end %>
+</ul>
