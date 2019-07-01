@@ -1,4 +1,5 @@
 class BreadsController < ApplicationController
+  before_action :find_bread, only: [:show, :edit, :update, :destroy]
 
   def index
     if params[:search_term]
@@ -12,7 +13,6 @@ class BreadsController < ApplicationController
 
   def show
     # byebug
-    @bread = Bread.find(params[:id])
   end
 
   def new
@@ -30,22 +30,23 @@ class BreadsController < ApplicationController
   end
 
   def edit
-    @bread = Bread.find(params[:id])
   end
 
   def update
-    @bread = Bread.find(params[:id])
     @bread.update(bread_params)
     redirect_to bread_path(@bread)
   end
 
   def destroy
-    @bread = Bread.find(params[:id])
     @bread.destroy
     redirect_to breads_path
   end
 
   private
+
+  def find_bread
+    @bread = Bread.find(params[:id])
+  end
 
   def bread_params
     return params.require(:bread).permit(:name, :flavor, :price)

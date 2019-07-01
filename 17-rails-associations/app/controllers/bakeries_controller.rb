@@ -6,6 +6,7 @@ class BakeriesController < ApplicationController
   end
 
   def show
+    # @reviewz = @bakery.reviews
   end
 
   def new

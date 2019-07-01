@@ -8,3 +8,13 @@
 <%= link_to "Edit this bread", edit_bread_path(@bread) %>
 
 <%= button_to "Burn this bread to the ground", bread_path(@bread), method: :delete %>
+
+<h3>Here are all the Reviews</h3>
+
+<ul>
+  <% @bread.reviews.each do |review| %>
+    <li>
+      <%= review.content %> - <%= link_to review.bakery_name, review.bakery %>
+    </li>
+  <% end %>
+</ul>

@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :reviews
   resources :bakeries
   resources :breads
   # get "/breads/new", to: "breads#new", as: "new_bread"
