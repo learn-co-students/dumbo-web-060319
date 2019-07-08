@@ -8,23 +8,23 @@
 # Key questions for Authentication
 *  What is the difference between Authorization and Authentication?
 *  What is hashing and how does it make password storage more secure?
-  "abc123" -> "djbhkdhidnjblid.dgvbndkjvbhdibd.etyiuet"
-  "password123" -> "rgeirgleijgiejb.rfhbfiuhbee.girhjblifj"
+  - "abc123" -> "djbhkdhidnjblid.dgvbndkjvbhdibd.etyiuet"
+  - "password123" -> "rgeirgleijgiejb.rfhbfiuhbee.girhjblifj"
 
 *  What are rainbow tables and how can they defeat a password hashing strategy?
-  "abc123" -> "djbhkdhidnjblid.dgvbndkjvbhdibd.etyiuet"
-  "password123" -> "rgeirgleijgiejb.rfhbfiuhbee.girhjblifj"
-  "password" -> "rgeirgleijgiejb.rfhbfiuhbee.girhjblifj"
-  "a" -> "ghjrlijishgd.bjfbjfda/.bfhnblisj"
-  "aa" -> "bjndlibjiadjbl./dbfbkfjnblijdflibjd.sdasdas"
+  - "abc123" -> "djbhkdhidnjblid.dgvbndkjvbhdibd.etyiuet"
+  - "password123" -> "rgeirgleijgiejb.rfhbfiuhbee.girhjblifj"
+  - "password" -> "rgeirgleijgiejb.rfhbfiuhbee.girhjblifj"
+  - "a" -> "ghjrlijishgd.bjfbjfda/.bfhnblisj"
+  - "aa" -> "bjndlibjiadjbl./dbfbkfjnblijdflibjd.sdasdas"
 
 *  What is salting? What is a salt? How can it defeat a rainbow tables attack?
 
-  "abc123"
+  - "abc123"
   => "abc123SALT"
   -> "djbhkdhidnjblid.dgvbndkjvbhdibd.etyiuet"
 
-  "abc123"
+  - "abc123"
   => "SALTabc123"
   -> "gijeodigjida.gbudhbgidfjbild.gifjlbixjfilb"
 
