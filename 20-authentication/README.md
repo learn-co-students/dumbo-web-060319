@@ -30,6 +30,7 @@
 
 ## Let's implement
 BCrypt
+
 0) Uncomment out BCrypt Gem
 1) Create a Migration with `password_digest`
 2) Write `has_secure_password` on the class
