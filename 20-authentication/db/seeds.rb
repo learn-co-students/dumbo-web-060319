@@ -35,3 +35,7 @@ student_names = [
 "Sean Padden",
 "Thomas Laforgia"
 ]
+
+student_names.shuffle.each do |name|
+  User.create(name: name, username: name.split(" ")[0], password: "abc123")
+end
