@@ -3,6 +3,16 @@
   * Learning a second language; gaining another superpower
   * Three essential pillars of front-end web programming
     * Three essential pillars of JS
+
+    - Listening for Events
+    - Talking to the server
+    - Traversing/Manipulating the DOM
+
+    When X event happens,
+    we're going to make Y fetch
+    and slap Z on the DOM (Document Object Model).
+
+
   * Schedule
     * Week 1 - Becoming a front-end developer
     * Week 2 - Becoming a better front-end developer
@@ -18,6 +28,10 @@
 
 # DOM questions (https://www.w3schools.com/cssref/css_selectors.asp)
 * What is the DOM and why do I care about it?
+  Document Object Model
+  - HTML, CSS, JS (rendered by the browser)
+    - Passed into the browser
+
 * What does it mean that the DOM is a tree?
 * Why can't I get access to the DOM from a script tag in the <head>?
 * What is debugger and why is it cool?
