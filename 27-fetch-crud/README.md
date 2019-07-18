@@ -18,8 +18,13 @@
 2. Make POST /to-do-items fetch
 3. Slap the single to-do item on the DOM!
 
-
 ## Update
+1. When click on checkbox event happens
+2. Make PATCH /to-do-items/8 fetch happen
+3. Slap done on the LI on the DOM!
 
 ## Delete
+1. When right click on the LI event happens
+2. Make DELETE /to-do-items/8 fetch happen
+3. Slap the li off the DOM!
 
