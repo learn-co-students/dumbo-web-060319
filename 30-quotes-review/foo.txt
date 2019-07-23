@@ -1,0 +1,10 @@
+- Getting likes with the quotes?
+- Accessing data / ID's to even like do a fetch
+- Updating the DOM after the like button is clicked 🆒🆒🆒🆒🆒
+  - Code organization for this ☝️
+  - Efficient ways of identifying elements
+- Optimistic Vs. Pessimistic rendering
+- POST fetch 🆒
+  - When do we need a body? Headers?
+- Event listeners on thee like button
+- innerHTML vs. document.createElement("whatever")
