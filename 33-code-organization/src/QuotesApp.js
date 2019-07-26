@@ -1,8 +1,8 @@
 class QuotesApp {
   
   constructor(){
-    const quotesList = new QuotesList()
-    new NewQuoteForm(quotesList.slapQuoteOnTheDOM)
+    const quoteList = new QuotesList()
+    new NewQuoteForm(quoteList.slapOneQuoteOnTheDOM)
   }
 
 }

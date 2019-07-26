@@ -8,10 +8,17 @@ class QuotesList {
   }
 
   slapQuotesOnTheDOM(quotes) {
-    quotes.forEach((quoteData) => {
-      const quoteComponent = new Quote(quoteData)
-      this.quoteList.innerHTML += quoteComponent.render()
-    })
+
+    // const domNodes = quotes.map(quoteData => new Quote(quoteData))
+    //       .map(quoteInstance => quoteInstance.render())
+
+    // this.quoteList.append(...domNodes)
+    quotes.forEach(this.slapOneQuoteOnTheDOM)
+  }
+
+  slapOneQuoteOnTheDOM = (quoteData) => {
+    const quoteComponent = new Quote(quoteData)
+    this.quoteList.append(quoteComponent.render())
   }
 
 }

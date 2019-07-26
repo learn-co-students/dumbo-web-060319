@@ -1,44 +1,9 @@
 {
   "quotes": [
     {
-      "id": 1,
-      "quote": "The here and now is all we have, and if we play it right it's all we'll need.",
-      "author": "Ann Richards"
-    },
-    {
-      "id": 2,
-      "quote": "There are no secrets to success. It is the result of preparation, hard work, and learning from failure.",
-      "author": "Collin Powell"
-    },
-    {
-      "id": 3,
-      "quote": "Don't count the days, make the days count.",
-      "author": "Mike Tyson"
-    },
-    {
-      "id": 4,
-      "quote": "You gain strength, courage and confidence by every experience in which you really stop to look fear in the face. You are able to say to yourself, 'I have lived through this horror. I can take the next thing that comes along.' You must do the thing you think you cannot do.",
-      "author": "Eleanor Roosevelt"
-    },
-    {
-      "id": 5,
-      "quote": "The cure for boredom is curiosity. There is no cure for curiosity.",
-      "author": "Dorothy Parker"
-    },
-    {
-      "id": 6,
-      "quote": "Do the best you can in every task, no matter how unimportant it may seem at the time. No one learns more about a problem than the person at the bottom.",
-      "author": "Sandra Day O'Connor"
-    },
-    {
       "id": 7,
       "quote": "Tell me and I forget, teach me and I remember, involve me and I learn.",
       "author": "Benjamin Franklin"
-    },
-    {
-      "id": 8,
-      "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-      "author": "Winston Churchhill"
     },
     {
       "id": 9,
@@ -49,47 +14,64 @@
       "id": 10,
       "quote": "You know, failure hurts. Any kind of failure stings. If you live in the sting, you will undoubtedly fail. My way of getting past the sting is to say no, I’m just not going to let this get me down.",
       "author": "Sonia Sotomayor"
-    },
-    {
-      "author": "Graham",
-      "description": "HELP MEEEE",
-      "id": 11
-    },
-    {
-      "quote": "graham",
-      "author": "poo",
-      "id": 12
     }
   ],
   "likes": [
     {
-      "id": 1,
-      "quoteId": 1,
-      "createdAt": 1558524356
+      "quoteId": 10,
+      "id": 1
     },
     {
-      "quoteId": 4,
+      "quoteId": 10,
       "id": 2
     },
     {
-      "quoteId": 4,
+      "quoteId": 10,
       "id": 3
     },
     {
-      "quoteId": 4,
+      "quoteId": 10,
       "id": 4
     },
     {
-      "quoteId": 4,
+      "quoteId": 10,
       "id": 5
     },
     {
-      "quoteId": 4,
+      "quoteId": 10,
       "id": 6
     },
     {
-      "quoteId": 4,
+      "quoteId": 7,
       "id": 7
+    },
+    {
+      "quoteId": 7,
+      "id": 8
+    },
+    {
+      "quoteId": 7,
+      "id": 9
+    },
+    {
+      "quoteId": 7,
+      "id": 10
+    },
+    {
+      "quoteId": 7,
+      "id": 11
+    },
+    {
+      "quoteId": 7,
+      "id": 12
+    },
+    {
+      "quoteId": 7,
+      "id": 13
+    },
+    {
+      "quoteId": 7,
+      "id": 14
     }
   ]
 }

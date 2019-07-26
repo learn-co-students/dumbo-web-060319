@@ -37,6 +37,10 @@ class QuotesAdapter {
       .then(res => res.json())
   }
 
+  static deleteQuote(quoteId) {
+    return fetch(this.baseUrl() + "/quotes/" + quoteId, { method: "DELETE" })
+  }
+
 }
 
 
