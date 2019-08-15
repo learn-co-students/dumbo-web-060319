@@ -1,0 +1,2 @@
+class UsersSnacksController < ApplicationController
+end
