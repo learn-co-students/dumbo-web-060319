@@ -1,11 +1,11 @@
 class SnacksController < ApplicationController
 
   def index
-    if authenticated?
+    if authenticated? # see application_controller.rb
       snacks = Snack.all
       render json: snacks
     else
-      render :json => { go_away: true }, :status => :unauthorized
+      tell_user_to_go_away! # see application_controller.rb
     end
   end
 

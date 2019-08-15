@@ -2,19 +2,18 @@ class UsersController < ApplicationController
 
   def show
     user_id = params[:id]
-    if authorized?(user_id)
+    if authorized?(user_id) # see application_controller.rb
       user = User.find(user_id)
       render json: user, include: :snacks
     else
-      render :json => { go_away: true }, :status => :unauthorized
+      tell_user_to_go_away!
     end
   end
 
   def create
     user = User.create(user_params)
     if user.valid?
-      token = JWT.encode({ user_id: user.id }, ENV["JWT_SECRET_KEY"], 'HS256')
-      render json: { token: token, username: user.username }
+      render json: auth_response_json(user) # see application_controller.rb
     else
       render json: { errors: user.errors.full_messages }
     end 
