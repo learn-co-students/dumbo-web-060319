@@ -5,6 +5,13 @@ class ApplicationController < ActionController::API
     return token.present? && token["user_id"] == user_id.to_i
   end
 
+  def user_who_is_logged_in
+    if authenticated?
+      user_id = try_get_jwt_token["user_id"]
+      User.find(user_id)
+    end
+  end
+
   def authenticated?
     try_get_jwt_token.present?
   end
@@ -17,7 +24,7 @@ class ApplicationController < ActionController::API
     render :json => { go_away: true }, :status => :unauthorized
   end
 
-  private 
+  private
 
   def make_token(user_id)
     JWT.encode({ user_id: user_id }, ENV["JWT_SECRET_KEY"], 'HS256')

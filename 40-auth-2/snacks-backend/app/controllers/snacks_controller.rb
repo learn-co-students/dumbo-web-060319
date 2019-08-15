@@ -9,5 +9,13 @@ class SnacksController < ApplicationController
     end
   end
 
+  # Creating a Snack_User
+  # def snack_user
+    # if authenticated?
+      # UserSnack.create(user: user_who_is_logged_in, snack_id: params[:id])
+      ## user_who_is_logged_in.user_snacks.create(snack_id: 2)
+    # end
+  # end
+
 
 end

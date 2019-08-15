@@ -1,5 +1,8 @@
 Rails.application.routes.draw do
   # resources :users_snacks
+
+  get '/persist', to: 'tokens#persist'
+  
   resources :users, only: [:show, :create]
   resources :snacks, only: [:index]
   resources :tokens, only: [:create]

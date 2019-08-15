@@ -16,7 +16,7 @@ class RegisterForm extends Component {
   render() {
     return (
       <div>
-        <h2>Log In</h2>
+        <h2>Register Form</h2>
         <form>
           <label htmlFor="username">Username</label>
           <input type="text" name="username" value={this.state.username} id="username" onChange={this.handleChange}/>
