@@ -10,7 +10,7 @@ class ApplicationController < ActionController::API
   end
 
   def auth_response_json(user)
-    { token: make_token(user.id), username: user.username }
+    { token: make_token(user.id), username: user.username, user_id: user.id }
   end
 
   def tell_user_to_go_away!
@@ -24,12 +24,12 @@ class ApplicationController < ActionController::API
   end
 
   def decode_token(token_string)
-    JWT.decode(token, ENV["JWT_SECRET_KEY"], true, { algorithm: 'HS256' })
+    JWT.decode(token_string, ENV["JWT_SECRET_KEY"], true, { algorithm: 'HS256' })
   end
 
   def try_get_jwt_token
-    token = request.headers["Authorization"]
-    if token.present?
+    token_string = request.headers["Authorization"]
+    if token_string.present?
       begin
         decoded_token = decode_token(token_string)
       rescue JWT::VerificationError
