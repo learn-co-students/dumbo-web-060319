@@ -23,11 +23,15 @@ class ApplicationController < ActionController::API
     JWT.encode({ user_id: user_id }, ENV["JWT_SECRET_KEY"], 'HS256')
   end
 
+  def decode_token(token_string)
+    JWT.decode(token, ENV["JWT_SECRET_KEY"], true, { algorithm: 'HS256' })
+  end
+
   def try_get_jwt_token
     token = request.headers["Authorization"]
     if token.present?
       begin
-        decoded_token = JWT.decode(token, ENV["JWT_SECRET_KEY"], true, { algorithm: 'HS256' })
+        decoded_token = decode_token(token_string)
       rescue JWT::VerificationError
         return nil
       end

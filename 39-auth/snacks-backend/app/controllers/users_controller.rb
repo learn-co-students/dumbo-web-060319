@@ -6,7 +6,7 @@ class UsersController < ApplicationController
       user = User.find(user_id)
       render json: user, include: :snacks
     else
-      tell_user_to_go_away!
+      tell_user_to_go_away! # see application_controller.rb
     end
   end
 

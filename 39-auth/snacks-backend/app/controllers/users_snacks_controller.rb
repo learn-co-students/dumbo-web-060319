@@ -1,2 +1,0 @@
-class UsersSnacksController < ApplicationController
-end
