@@ -1,0 +1,12 @@
+.App {
+  text-align: center;
+}
+
+label {
+  display: block;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: auto;
+}
